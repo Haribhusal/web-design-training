@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.btn_custom {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bg_blue {
+  background-color: #0d627a;
+}
+.bg_orange {
+  background-color: #ff6634;
+}
+
+.flipIcon {
+  transform: rotate(180deg);
+}
+
+header .topbar {
+  background-color: #0d627a;
+  color: #fff;
+}
+
+header .topbar .datetime {
+  display: flex;
+  gap: 20px;
+}
+
+header .topbar .sociallogin {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .topbar a {
+  color: #ffff;
+}
+
+header .topbar .socialicon {
+  display: flex;
+}
+header .topbar .socialicon a {
+  display: block;
+  padding: 5px;
+}
+
+header .topbar .socialicon i {
+  font-size: 22px;
+}
+
+header .logobar .nav-item {
+  display: flex;
+  align-items: center;
+}
