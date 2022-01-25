@@ -1,0 +1,41 @@
+header {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  .topbar {
+    // background-color: #0d627a;
+    // color: #fff;
+    // a {
+    //   color: #ffff;
+    // }
+
+    .sociallogin {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      align-items: center;
+      .socialicon {
+        display: flex;
+      }
+
+      a {
+        display: block;
+        padding: 5px;
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .datetime {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .logobar {
+    .nav-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
