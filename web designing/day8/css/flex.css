@@ -1,0 +1,42 @@
+.parent {
+  display: flex;
+  background-color: red;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding: 30px;
+  height: 90vh;
+  align-items: flex-start;
+  align-content: space-between;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* align-items: flex-start; */
+}
+
+/* responsive web design */
+/* @media screen and (max-width: 600px) {
+  .parent {
+    flex-direction: column;
+  }
+} */
+
+.parent .child {
+  background-color: #fff;
+  padding: 30px;
+  width: ;
+}
+
+.parent .child1 {
+  flex: 1;
+  background-color: orange;
+}
+
+.parent .child2 {
+  flex: 2;
+  background-color: pink;
+}
+.parent .child3 {
+  flex: 1;
+  background-color: blue;
+  align-self: flex-start;
+}

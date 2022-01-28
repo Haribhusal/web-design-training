@@ -1,0 +1,156 @@
+.aboutPage .samedesign {
+  height: 50px;
+  width: 100px;
+  background-color: purple;
+  -webkit-box-shadow: 0px 10px 30px rgba9(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba9(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: black;
+}
+
+.aboutPage .about h3 {
+  color: #fff;
+}
+
+header {
+  background-color: black;
+  color: orange;
+}
+
+header .textbutton {
+  height: 50px;
+  width: 100px;
+  background-color: purple;
+  -webkit-box-shadow: 0px 10px 30px rgba9(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba9(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: black;
+}
+
+header .topbar .sociallogin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .topbar .sociallogin .socialicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .topbar .sociallogin a {
+  display: block;
+  padding: 5px;
+}
+
+header .topbar .sociallogin a i {
+  font-size: 22px;
+}
+
+header .topbar .datetime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+header .logobar .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.gap_small {
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.btn_custom {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn_orange {
+  background-color: #ff6634;
+  color: #fff;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.btn_orange:hover {
+  color: #fff;
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.bg_blue {
+  background-color: #0d627a;
+}
+
+.bg_orange {
+  background-color: #ff6634;
+}
+
+.text_orange {
+  color: #ff6634;
+}
+
+.sandeepCss {
+  background-color: sandybrown;
+  border: 10px solid black;
+  height: 100px;
+  width: 1000px;
+}
+
+.draggableItem {
+  height: 20px;
+  width: 100px;
+  background-color: #fff;
+}
+/*# sourceMappingURL=mystyles.css.map */

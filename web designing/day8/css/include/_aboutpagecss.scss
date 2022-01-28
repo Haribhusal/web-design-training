@@ -1,0 +1,12 @@
+// about page
+
+.aboutPage {
+  .samedesign {
+    @include somegroupofstyles;
+  }
+  .about {
+    h3 {
+      color: #fff;
+    }
+  }
+}

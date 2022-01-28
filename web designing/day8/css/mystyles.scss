@@ -1,0 +1,18 @@
+@import "include/variables/variables";
+@import "include/mixin/mixin";
+@import "include/aboutpagecss";
+@import "include/modules/header";
+@import "include/settings/settings";
+
+.sandeepCss {
+  background-color: sandybrown;
+  border: 10px solid black;
+  height: 100px;
+  width: 1000px;
+}
+
+.draggableItem {
+  height: 20px;
+  width: 100px;
+  background-color: #fff;
+}
