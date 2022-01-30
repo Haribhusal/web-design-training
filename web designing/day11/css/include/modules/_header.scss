@@ -1,0 +1,65 @@
+header {
+  // background-color: $primaryColor;
+  color: #fff;
+  .topbar {
+    background-color: #0d627a;
+    // color: #fff;
+    // a {
+    //   color: #ffff;
+    // }
+
+    .sociallogin {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      align-items: center;
+      .socialicon {
+        display: flex;
+      }
+
+      a {
+        display: block;
+        padding: 5px;
+        color: #fff;
+        i {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .datetime {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  .logobar {
+    .nav-item {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.fixHeader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: $primaryColor !important;
+  animation: slowDownOpacity 0.5s cubic-bezier(0.9, 0.21, 0, 1.01);
+  box-shadow: 0px 10px 30px rgba(#000, 0.2);
+
+  .topbar {
+    display: none;
+  }
+}
+
+@keyframes slowDownOpacity {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
