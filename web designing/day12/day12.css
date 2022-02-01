@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton", sans-serif;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+/* .responsive-items {
+  background-color: red;
+} */
+
+@media screen and (max-width: 768px) {
+  .responsive_updown {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-6 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .responsive-items {
+    padding: 50px 0;
+    background-color: blue;
+  }
+  .leftBox .imagebox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .leftBox .box {
+    padding: 15px !important;
+    padding-top: 70px !important;
+  }
+  .leftBox .image {
+    margin-bottom: -50px;
+    justify-content: center;
+  }
+  .leftBox .image img {
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: 0px !important;
+  }
+
+  /* design for rightbox */
+  .rightBox .imagebox {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .rightBox .box {
+    padding: 15px !important;
+    padding-top: 70px !important;
+  }
+  .rightBox .image {
+    margin-bottom: -50px;
+    justify-content: center;
+  }
+  .rightBox .image img {
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .responsive-items {
+    background-color: orange;
+  }
+}

@@ -1,0 +1,32 @@
+.header__btn {
+  padding: 10px 30px;
+}
+
+.header--red {
+  background-color: red;
+}
+
+.left__btn {
+  padding: 10px 30px;
+}
+
+.left--brown {
+  background-color: brown;
+}
+
+.right__btn {
+  padding: 10px 30px;
+}
+
+.right--red {
+  background-color: red;
+}
+
+.footer__btn {
+  padding: 10px 30px;
+}
+
+.footer--gray {
+  background-color: gray;
+}
+/*# sourceMappingURL=mainStyle.css.map */

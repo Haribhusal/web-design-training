@@ -1,0 +1,35 @@
+.header {
+  &__btn {
+    padding: 10px 30px;
+  }
+  &--red {
+    background-color: red;
+  }
+}
+
+.left {
+  &__btn {
+    padding: 10px 30px;
+  }
+  &--brown {
+    background-color: brown;
+  }
+}
+
+.right {
+  &__btn {
+    padding: 10px 30px;
+  }
+  &--red {
+    background-color: red;
+  }
+}
+
+.footer {
+  &__btn {
+    padding: 10px 30px;
+  }
+  &--gray {
+    background-color: gray;
+  }
+}
