@@ -6,10 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 16 - Javascript</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+
+        .splitText {
+            line-height: 100vh;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 7rem;
+            text-transform: uppercase;
+        }
+
+        span {
+            color: #333;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+            display: inline-block;
+        }
+
+        span.fill {
+            color: #333;
+            -webkit-text-fill-color: #333;
+            -webkit-text-stroke-width: 0px;
+            -webkit-text-stroke-color: black;
+            -webkit-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+    </style>
 </head>
 
 <body>
+    <h1 class="splitText">Hari Bhusal</h1>
 
+    <script src="script.js"></script>
+
+    <script>
+        var text = document.querySelector('.splitText');
+        var strText = text.textContent;
+        var splitText = strText.split('');
+        // console.log(strText);
+        text.textContent = '';
+
+        for (i = 0; i < splitText.length; i++) {
+            text.innerHTML += "<span>" + splitText[i] + "</span>";
+        }
+        let char = 0;
+        let timer = setInterval(onTick, 50);
+
+        function onTick() {
+            const span = text.querySelectorAll('span')[char];
+            span.classList.add('fill');
+            char++;
+            if (char === splitText.length) {
+                // complete();
+                restart();
+                return;
+            }
+        }
+
+        function
+        complete() {
+            clearInterval(timer);
+            timer = null;
+        }
+    </script>
 </body>
 
 </html>
