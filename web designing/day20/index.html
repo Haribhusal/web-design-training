@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 - Javascript</title>
+</head>
+
+<body>
+    <h1 class="today" style="color: #fff; background-color: #333; padding: 30px;">
+
+    </h1>
+    <script>
+        var today = new Date();
+        // console.log(today);
+        // // document.write(today);
+        // document.querySelector(".today").innerHTML = today.now();
+
+
+        // var bar = 2
+        // console.log(bar);
+
+        // if (bar == 1) {
+        //     document.querySelector(".today").innerHTML = "Sunday";
+        // } else if (bar == 1) {
+        //     document.querySelector(".today").innerHTML = "Monday";
+        // } else if (bar == 2) {
+        //     document.querySelector(".today").innerHTML = "Tuesday";
+        // } else if (bar == 3) {
+        //     document.querySelector(".today").innerHTML = "Wednesday";
+        // } else if (bar == 4) {
+        //     document.querySelector(".today").innerHTML = "Thursday";
+        // } else if (bar == 5) {
+        //     document.querySelector(".today").innerHTML = "Friday";
+        // } else if (bar == 6) {
+        //     document.querySelector(".today").innerHTML = "Saturday";
+        // }
+
+        // 0 - sunday
+        // 1 - monday
+        // 2 - tuesday
+        // 3 - wednesday
+        // 4 - thursday
+        // 5 - friday
+        // 6 - saturday
+
+
+        // switch (today.getDay()) {
+        //     case 0:
+        //         document.querySelector(".today").innerHTML = "Sunday";
+        //         break;
+        //     case 1:
+        //         document.querySelector(".today").innerHTML = "Monday";
+        //         break;
+        //     case 2:
+        //         document.querySelector(".today").innerHTML = "Tuesday";
+        //         break;
+
+        //     default:
+        //         document.querySelector(".today").innerHTML = "No day";
+        // }
+
+
+        // for Loop
+
+        for (i = 0; i < 10; i++) {
+            document.write("hello <hr/>")
+        }
+
+
+        const learners = {
+            learner1: "Sudip",
+            learner2: "Bimal",
+            learner3: "Rupesh",
+            learner4: "Niraj"
+        }
+
+        let output = ""
+
+
+        for (let learnerPerson in learners) {
+            output += learners[learnerPerson];
+            // output = output + learners(learnerPerson);
+        }
+
+
+        document.write(output)
+    </script>
+
+</body>
+
+</html>

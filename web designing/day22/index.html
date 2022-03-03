@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day22</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+
+<body>
+
+
+    <div class="posts"></div>
+
+    <script>
+        async function getPosts() {
+            let url = 'https://jsonplaceholder.typicode.com/posts';
+            try {
+                let res = await fetch(url);
+                return await res.json();
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        async function renderPosts() {
+            let posts = await getPosts();
+            console.log(posts);
+
+            let html = '';
+            posts.forEach(postItem => {
+                let htmlSegment = `<div class="post">
+                <div class="id">
+                ${postItem.id}
+                </div>
+            
+            <h2>${postItem.title} </h2>
+            <div class="text">
+                <p>${postItem.body}</p>
+            </div>
+            <div class="id">
+                ${postItem.userId}
+            </div>
+        </div>`;
+
+                html += htmlSegment;
+            });
+
+            let container = document.querySelector('.posts');
+            container.innerHTML = html;
+        }
+
+        renderPosts();
+    </script>
+
+</body>
+
+</html>
